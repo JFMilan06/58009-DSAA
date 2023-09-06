@@ -4,22 +4,23 @@
 using namespace std;
 
 void displayArray(int numbers[], int n){
-   for( int i = 0; i < n; i++ ){
-      cout << numbers[ i ] << ", ";
+   for(int i= 0;i<n;i++){
+      cout<<numbers[ i ]<<", ";
    }
-   cout << endl;
+   cout<<endl;
+}
+   void append(int numbers[],int &n, int a ){
+   if(n<x) {
+      numbers[ n ] = a;
+   }
+   n+=1;
 }
 
 
 int main() {
    int numbers[ x ] = {1,2,3,4,5,6,7,8,9,10};
    int n = 10;
-   int pos=2;
-   int z = 11;
    int i;
-   for (i = n - 1; i >= pos; i--)
-        numbers[i] = numbers[i - 1];
-   numbers[pos - 1] = z;
-   
+   append(numbers,n,11);
    displayArray( numbers, n );
 }
